@@ -13,9 +13,10 @@ return new class extends Migration {
     public function up()
     {
         Schema::create('shorturls', function (Blueprint $table) {
-            $table->id();
+            $table->id('shorturl_id');
             $table->string('shorturl');
             $table->timestamps();
+
         });
     }
 

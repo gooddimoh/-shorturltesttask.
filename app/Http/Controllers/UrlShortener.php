@@ -11,6 +11,7 @@ use Illuminate\Support\Str;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Auth\Events\Validated;
+use function GuzzleHttp\Promise\all;
 
 class UrlShortener extends Controller
 {
@@ -57,7 +58,7 @@ class UrlShortener extends Controller
 
     public function showurls()
     {
-        $urls = ShortUrl::all();
-        return view("result", $urls);
+        $shorturls = ShortUrl::all();
+        return view("result", ['shorturls' => $shorturls]);
     }
 }

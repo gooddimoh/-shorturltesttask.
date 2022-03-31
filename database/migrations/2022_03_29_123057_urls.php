@@ -12,12 +12,12 @@ return new class extends Migration {
      */
     public function up()
     {
-        Schema::create('url', function (Blueprint $table) {
+        Schema::create('urls', function (Blueprint $table) {
             $table->id('url_id');
             $table->string('url');
             $table->timestamps();
 
-            $table->foreignId('fk_url_id')->constrained()->references('id')->on("shorturls");
+//            $table->foreignId('fk_url_id')->constrained()->references('url_id')->on("url");
         });
     }
 
