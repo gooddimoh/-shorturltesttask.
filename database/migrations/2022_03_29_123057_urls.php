@@ -14,7 +14,7 @@ return new class extends Migration {
     {
         Schema::create('urls', function (Blueprint $table) {
             $table->id('url_id');
-            $table->string('url');
+            $table->string('realurl');
             $table->timestamps();
 
 //            $table->foreignId('fk_url_id')->constrained()->references('url_id')->on("url");

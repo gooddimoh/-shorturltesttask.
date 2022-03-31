@@ -28,14 +28,12 @@ class UrlShortener extends Controller
     public function shorturlredirect(Request $request)
     {
 
-
     }
 
     public function generateshorturl(Request $request)
     {
-
         $shorturl = ShortUrl::generateshorturl();
-        $realurl = $request->get('realurl');
+        $realurl = $request->post('realurl');
 
         $shorturlmodel = new ShortUrl();
         $shorturlmodel->shorturl = $shorturl;
@@ -52,8 +50,7 @@ class UrlShortener extends Controller
         $realurls = RealUrl::all();
         $shorturls = ShortUrl::all();
 
-        return view('shorturl', $shorturls);
-
+        return view('shorturls', ['shorturls' => $shorturls]);
     }
 
     public function showurls()

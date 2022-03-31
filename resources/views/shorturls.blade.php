@@ -400,19 +400,23 @@
     </style>
 </head>
 <body class="antialiased">
-<div
-    class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-    <form action="/generateshorturl" method="post">
-        @csrf {{ csrf_field() }}
-        <input id="realurl" type="url" name="realurl" placeholder="url">
-
-        <input type="submit" placeholder="submit">
-    </form>
-    <style type="text/css">
-        #realurl {
-            padding: 6px;
-        }
-    </style>
+<div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
+    <div class="result">
+        <div class="shorturls">
+            @foreach($shorturls as $shorturl)
+                <div class="shorturls">
+                    {{ $shorturl->shorturl }}
+                </div>
+            @endforeach
+        </div>
+    </div>
+    {{--    <script type="application/javascript">--}}
+    {{--        $.ajax({--}}
+    {{--            url: "demo_test.txt", success: function (result) {--}}
+    {{--                $("#result").html(result);--}}
+    {{--            }--}}
+    {{--        });--}}
+    {{--    </script>--}}
 </div>
 </body>
 </html>

@@ -16,7 +16,7 @@ use Illuminate\Auth;
 Route::get('/', [App\Http\Controllers\UrlShortener::class, 'index'])->name('index');
 
 Route::get('/shorturlredirect', [App\Http\Controllers\UrlShortener::class, 'shorturlredirect'])->name('shorturlredirect');
-Route::get('/generateshorturl', [App\Http\Controllers\UrlShortener::class, 'generateshorturl'])->name('generateshorturl');
+Route::post('/generateshorturl', [App\Http\Controllers\UrlShortener::class, 'generateshorturl'])->name('generateshorturl');
 
 Route::get('/showurls', [App\Http\Controllers\UrlShortener::class, 'showurls'])->name('showurls');
 
