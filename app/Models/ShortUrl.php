@@ -5,12 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Str;
 use Laravel\Sanctum\HasApiTokens;
-use Laravel\Scout\Searchable;
+//use Laravel\Scout\Searchable;
 
 class ShortUrl extends Model
 {
-    use HasApiTokens, HasFactory, Notifiable, Searchable;
+    use HasApiTokens, HasFactory, Notifiable;
 
     protected $table = 'shorturls';
 
@@ -36,8 +37,9 @@ class ShortUrl extends Model
         'email_verified_at' => 'datetime',
     ];
 
-    public function generateurl()
+    public static function generateshorturl()
     {
-
+        $shorturl = Str::random(7);
+        return $shorturl;
     }
 }

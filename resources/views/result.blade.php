@@ -1,160 +1,420 @@
-<html lang="en-US"><head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Preview - Bootstrap Themes</title>
-    <link rel="profile" href="http://gmpg.org/xfn/11">
-    <link rel="pingback" href="https://themes.getbootstrap.com/xmlrpc.php">
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="https://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/assets/images/fav/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/assets/images/fav/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/assets/images/fav/favicon-16x16.png">
-    <link rel="manifest" href="https://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/assets/images/fav/manifest.json">
-    <link rel="shortcut icon" href="https://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/assets/images/fav/favicon.ico">
-    <meta name="msapplication-config" content="https://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/assets/images/fav/browserconfig.xml">
+    <title>Laravel</title>
 
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <!-- This site is optimized with the Yoast SEO plugin v12.7.1 - https://yoast.com/wordpress/plugins/seo/ -->
-    <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <link rel="canonical" href="https://themes.getbootstrap.com/preview/">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="Preview - Bootstrap Themes">
-    <meta property="og:url" content="https://themes.getbootstrap.com/preview/">
-    <meta property="og:site_name" content="Bootstrap Themes">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Preview - Bootstrap Themes">
-    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="application/ld+json" class="yoast-schema-graph yoast-schema-graph--main">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://themes.getbootstrap.com/#website","url":"https://themes.getbootstrap.com/","name":"Bootstrap Themes","description":"Built and Curated by the Bootstrap Team","potentialAction":{"@type":"SearchAction","target":"https://themes.getbootstrap.com/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"WebPage","@id":"https://themes.getbootstrap.com/preview/#webpage","url":"https://themes.getbootstrap.com/preview/","inLanguage":"en-US","name":"Preview - Bootstrap Themes","isPartOf":{"@id":"https://themes.getbootstrap.com/#website"},"datePublished":"2017-10-18T20:24:13+00:00","dateModified":"2017-10-18T20:24:13+00:00"}]}</script>
-    <!-- / Yoast SEO plugin. -->
+    <!-- Styles -->
+    <style>
+        /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+        html {
+            line-height: 1.15;
+            -webkit-text-size-adjust: 100%
+        }
 
-    <link rel="dns-prefetch" href="//s.w.org">
-    <link rel="alternate" type="application/rss+xml" title="Bootstrap Themes » Feed" href="https://themes.getbootstrap.com/feed/">
-    <link rel="alternate" type="application/rss+xml" title="Bootstrap Themes » Comments Feed" href="https://themes.getbootstrap.com/comments/feed/">
-    <script type="text/javascript">
-        window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/themes.getbootstrap.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.3"}};
-        !function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
-    </script><script src="https://themes.getbootstrap.com/wp-includes/js/wp-emoji-release.min.js?ver=5.3" type="text/javascript" defer=""></script>
-    <style type="text/css">
-        img.wp-smiley,
-        img.emoji {
-            display: inline !important;
-            border: none !important;
-            box-shadow: none !important;
-            height: 1em !important;
-            width: 1em !important;
-            margin: 0 .07em !important;
-            vertical-align: -0.1em !important;
-            background: none !important;
-            padding: 0 !important;
+        body {
+            margin: 0
+        }
+
+        a {
+            background-color: transparent
+        }
+
+        [hidden] {
+            display: none
+        }
+
+        html {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+            line-height: 1.5
+        }
+
+        *, :after, :before {
+            box-sizing: border-box;
+            border: 0 solid #e2e8f0
+        }
+
+        a {
+            color: inherit;
+            text-decoration: inherit
+        }
+
+        svg, video {
+            display: block;
+            vertical-align: middle
+        }
+
+        video {
+            max-width: 100%;
+            height: auto
+        }
+
+        .bg-white {
+            --bg-opacity: 1;
+            background-color: #fff;
+            background-color: rgba(255, 255, 255, var(--bg-opacity))
+        }
+
+        .bg-gray-100 {
+            --bg-opacity: 1;
+            background-color: #f7fafc;
+            background-color: rgba(247, 250, 252, var(--bg-opacity))
+        }
+
+        .border-gray-200 {
+            --border-opacity: 1;
+            border-color: #edf2f7;
+            border-color: rgba(237, 242, 247, var(--border-opacity))
+        }
+
+        .border-t {
+            border-top-width: 1px
+        }
+
+        .flex {
+            display: flex
+        }
+
+        .grid {
+            display: grid
+        }
+
+        .hidden {
+            display: none
+        }
+
+        .items-center {
+            align-items: center
+        }
+
+        .justify-center {
+            justify-content: center
+        }
+
+        .font-semibold {
+            font-weight: 600
+        }
+
+        .h-5 {
+            height: 1.25rem
+        }
+
+        .h-8 {
+            height: 2rem
+        }
+
+        .h-16 {
+            height: 4rem
+        }
+
+        .text-sm {
+            font-size: .875rem
+        }
+
+        .text-lg {
+            font-size: 1.125rem
+        }
+
+        .leading-7 {
+            line-height: 1.75rem
+        }
+
+        .mx-auto {
+            margin-left: auto;
+            margin-right: auto
+        }
+
+        .ml-1 {
+            margin-left: .25rem
+        }
+
+        .mt-2 {
+            margin-top: .5rem
+        }
+
+        .mr-2 {
+            margin-right: .5rem
+        }
+
+        .ml-2 {
+            margin-left: .5rem
+        }
+
+        .mt-4 {
+            margin-top: 1rem
+        }
+
+        .ml-4 {
+            margin-left: 1rem
+        }
+
+        .mt-8 {
+            margin-top: 2rem
+        }
+
+        .ml-12 {
+            margin-left: 3rem
+        }
+
+        .-mt-px {
+            margin-top: -1px
+        }
+
+        .max-w-6xl {
+            max-width: 72rem
+        }
+
+        .min-h-screen {
+            min-height: 100vh
+        }
+
+        .overflow-hidden {
+            overflow: hidden
+        }
+
+        .p-6 {
+            padding: 1.5rem
+        }
+
+        .py-4 {
+            padding-top: 1rem;
+            padding-bottom: 1rem
+        }
+
+        .px-6 {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem
+        }
+
+        .pt-8 {
+            padding-top: 2rem
+        }
+
+        .fixed {
+            position: fixed
+        }
+
+        .relative {
+            position: relative
+        }
+
+        .top-0 {
+            top: 0
+        }
+
+        .right-0 {
+            right: 0
+        }
+
+        .shadow {
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06)
+        }
+
+        .text-center {
+            text-align: center
+        }
+
+        .text-gray-200 {
+            --text-opacity: 1;
+            color: #edf2f7;
+            color: rgba(237, 242, 247, var(--text-opacity))
+        }
+
+        .text-gray-300 {
+            --text-opacity: 1;
+            color: #e2e8f0;
+            color: rgba(226, 232, 240, var(--text-opacity))
+        }
+
+        .text-gray-400 {
+            --text-opacity: 1;
+            color: #cbd5e0;
+            color: rgba(203, 213, 224, var(--text-opacity))
+        }
+
+        .text-gray-500 {
+            --text-opacity: 1;
+            color: #a0aec0;
+            color: rgba(160, 174, 192, var(--text-opacity))
+        }
+
+        .text-gray-600 {
+            --text-opacity: 1;
+            color: #718096;
+            color: rgba(113, 128, 150, var(--text-opacity))
+        }
+
+        .text-gray-700 {
+            --text-opacity: 1;
+            color: #4a5568;
+            color: rgba(74, 85, 104, var(--text-opacity))
+        }
+
+        .text-gray-900 {
+            --text-opacity: 1;
+            color: #1a202c;
+            color: rgba(26, 32, 44, var(--text-opacity))
+        }
+
+        .underline {
+            text-decoration: underline
+        }
+
+        .antialiased {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale
+        }
+
+        .w-5 {
+            width: 1.25rem
+        }
+
+        .w-8 {
+            width: 2rem
+        }
+
+        .w-auto {
+            width: auto
+        }
+
+        .grid-cols-1 {
+            grid-template-columns:repeat(1, minmax(0, 1fr))
+        }
+
+        @media (min-width: 640px) {
+            .sm\:rounded-lg {
+                border-radius: .5rem
+            }
+
+            .sm\:block {
+                display: block
+            }
+
+            .sm\:items-center {
+                align-items: center
+            }
+
+            .sm\:justify-start {
+                justify-content: flex-start
+            }
+
+            .sm\:justify-between {
+                justify-content: space-between
+            }
+
+            .sm\:h-20 {
+                height: 5rem
+            }
+
+            .sm\:ml-0 {
+                margin-left: 0
+            }
+
+            .sm\:px-6 {
+                padding-left: 1.5rem;
+                padding-right: 1.5rem
+            }
+
+            .sm\:pt-0 {
+                padding-top: 0
+            }
+
+            .sm\:text-left {
+                text-align: left
+            }
+
+            .sm\:text-right {
+                text-align: right
+            }
+        }
+
+        @media (min-width: 768px) {
+            .md\:border-t-0 {
+                border-top-width: 0
+            }
+
+            .md\:border-l {
+                border-left-width: 1px
+            }
+
+            .md\:grid-cols-2 {
+                grid-template-columns:repeat(2, minmax(0, 1fr))
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .lg\:px-8 {
+                padding-left: 2rem;
+                padding-right: 2rem
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .dark\:bg-gray-800 {
+                --bg-opacity: 1;
+                background-color: #2d3748;
+                background-color: rgba(45, 55, 72, var(--bg-opacity))
+            }
+
+            .dark\:bg-gray-900 {
+                --bg-opacity: 1;
+                background-color: #1a202c;
+                background-color: rgba(26, 32, 44, var(--bg-opacity))
+            }
+
+            .dark\:border-gray-700 {
+                --border-opacity: 1;
+                border-color: #4a5568;
+                border-color: rgba(74, 85, 104, var(--border-opacity))
+            }
+
+            .dark\:text-white {
+                --text-opacity: 1;
+                color: #fff;
+                color: rgba(255, 255, 255, var(--text-opacity))
+            }
+
+            .dark\:text-gray-400 {
+                --text-opacity: 1;
+                color: #cbd5e0;
+                color: rgba(203, 213, 224, var(--text-opacity))
+            }
+
+            .dark\:text-gray-500 {
+                --tw-text-opacity: 1;
+                color: #6b7280;
+                color: rgba(107, 114, 128, var(--tw-text-opacity))
+            }
         }
     </style>
-    <link rel="stylesheet" id="wp-block-library-css" href="https://themes.getbootstrap.com/wp-includes/css/dist/block-library/style.min.css?ver=5.3" type="text/css" media="all">
-    <link rel="stylesheet" id="wc-block-style-css" href="https://themes.getbootstrap.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/style.css?ver=2.4.5" type="text/css" media="all">
-    <link rel="stylesheet" id="woocommerce-layout-css" href="https://themes.getbootstrap.com/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=3.8.1" type="text/css" media="all">
-    <link rel="stylesheet" id="woocommerce-smallscreen-css" href="https://themes.getbootstrap.com/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=3.8.1" type="text/css" media="only screen and (max-width: 768px)">
-    <link rel="stylesheet" id="woocommerce-general-css" href="https://themes.getbootstrap.com/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=3.8.1" type="text/css" media="all">
-    <style id="woocommerce-inline-inline-css" type="text/css">
-        .woocommerce form .form-row .required { visibility: visible; }
+
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+        }
     </style>
-    <link rel="stylesheet" id="dokan-fontawesome-css" href="https://themes.getbootstrap.com/wp-content/plugins/dokan-lite/assets/vendors/font-awesome/font-awesome.min.css?ver=2.9.27" type="text/css" media="all">
-    <link rel="stylesheet" id="dokan-theme-skin-css" href="https://themes.getbootstrap.com/wp-content/themes/dokan/assets/css/skins/purple.css" type="text/css" media="all">
-    <script type="text/javascript">
-        /* <![CDATA[ */
-        var dokan = {"ajaxurl":"https:\/\/themes.getbootstrap.com\/wp-admin\/admin-ajax.php","nonce":"d6ef7db9a3","ajax_loader":"https:\/\/themes.getbootstrap.com\/wp-content\/plugins\/dokan-lite\/assets\/images\/ajax-loader.gif","seller":{"available":"Available","notAvailable":"Not Available"},"delete_confirm":"Are you sure?","wrong_message":"Something went wrong. Please try again.","vendor_percentage":"70","commission_type":"percentage","rounding_precision":"6","mon_decimal_point":".","product_types":["simple"],"rest":{"root":"https:\/\/themes.getbootstrap.com\/wp-json\/","nonce":"822d6ce879","version":"dokan\/v1"},"api":null,"libs":[],"routeComponents":{"default":null},"routes":[],"urls":{"assetsUrl":"https:\/\/themes.getbootstrap.com\/wp-content\/plugins\/dokan-lite\/assets"}};
-        /* ]]> */
-    </script>
-    <script type="text/javascript" src="https://themes.getbootstrap.com/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp"></script>
-    <script type="text/javascript" src="https://themes.getbootstrap.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
-    <link rel="https://api.w.org/" href="https://themes.getbootstrap.com/wp-json/">
-    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://themes.getbootstrap.com/xmlrpc.php?rsd">
-    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://themes.getbootstrap.com/wp-includes/wlwmanifest.xml">
-    <link rel="shortlink" href="https://themes.getbootstrap.com/?p=126">
-    <link rel="alternate" type="application/json+oembed" href="https://themes.getbootstrap.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthemes.getbootstrap.com%2Fpreview%2F">
-    <link rel="alternate" type="text/xml+oembed" href="https://themes.getbootstrap.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthemes.getbootstrap.com%2Fpreview%2F&amp;format=xml">
-    <style>.woocommerce-password-strength.short {color: #e2401c}.woocommerce-password-strength.bad {color: #e2401c}.woocommerce-password-strength.good {color: #3d9cd2}.woocommerce-password-strength.strong {color: #0f834d}</style>	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
-    <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>        <style type="text/css">
-    </style>
-    <!-- The filemtime is to append a timestamp for the last time the stylesheet was updated to automate cache busting from CloudFlare -->
-    <link rel="stylesheet" href="https://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/style.css?ver=1590611604">
+</head>
+<body class="antialiased">
+<div
+    class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-67613229-3"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-67613229-3');
-    </script>
-
-    <script src="chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/prompt.js"></script></head>
-<body data-new-gr-c-s-check-loaded="14.1054.0" data-gr-ext-installed="">
-<style>html{margin-top:0 !important;}</style>
-
-<main class="main bg-dark">
-    <iframe class="iframe-preview" width="100%" src="https://frlive.prium.me/"></iframe>
-</main>
-
-<nav class="navbar navbar-preview fixed-top">
-    <div class="container-fluid d-flex justify-content-between align-items-center w-100"><a class="my-lg-0 text-gray-soft" href="https://themes.getbootstrap.com/product/falcon-admin-dashboard-webapp-template-react/"><i class="bootstrap-themes-icon-left-open-1"></i> View theme <span class="d-none d-sm-inline">info</span></a>
-        <ul class="nav nav-preview d-none d-md-flex" role="tablist">
-            <li class="nav-item"><a class="nav-link btn-iframe-to-desktop-trigger active" data-toggle="tab" href="#home" role="tab"><i class="bootstrap-themes-icon-desktop nav-preview__icon"></i></a></li>
-            <li class="nav-item"><a class="nav-link nav-link--small btn-iframe-to-mobile-trigger" data-toggle="tab" href="#profile" role="tab"><i class="bootstrap-themes-icon-iphone nav-preview__icon nav-preview__icon--sm"></i></a></li>
-        </ul>
-        <div class="form-inline">
-            <div class="btn-group d-none d-sm-flex">
-                <a class="dropdown-toggle text-gray-soft" js-price-dropdown="true" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Standard License</a>
-                <div class="dropdown-menu dropdown-menu--xl dropdown-menu--centered dropdown-menu--has-triangle">
-                    <button class="dropdown-block-item switch_price_prod" data-type="Standard License" data-price="49.00" data-price_label="$49.00" data-label="Standard License">
-                        <div class="d-flex justify-content-between align-items-center mb-2"><span>Standard License</span><span class="d-flex align-items-center">$49.00</span></div>
-                        <ul class="fs-13 text-gray-soft mb-2">
-                            <li>Use for a single product</li>
-                            <li>Non-paying users only</li>
-                        </ul>
-                        <p class="fs-11 text-gray-soft">Read the full <a href="https://themes.getbootstrap.com/licenses#fullStandardLicense">Standard License</a></p>
-                    </button>
-                    <div class="dropdown-divider"></div>
-
-                    <button class="dropdown-block-item switch_price_prod" data-type="Multisite License" data-price="149.00" data-price_label="$149.00" data-label="Multisite License">
-                        <div class="d-flex justify-content-between align-items-center mb-2"><span>Multisite License</span><span class="d-flex align-items-center">$149.00</span></div>
-                        <ul class="fs-13 text-gray-soft mb-2">
-                            <li>Use for a unlimited product</li>
-                            <li>Non-paying users only</li>
-                        </ul>
-                        <p class="fs-11 text-gray-soft">Read the full <a href="https://themes.getbootstrap.com/licenses#fullMultisiteLicense">Multisite License</a></p>
-                    </button>
-
-                    <div class="dropdown-divider"></div>
-                    <button class="dropdown-block-item switch_price_prod" data-type="Extended License" data-price="490.00" data-price_label="$490.00" data-label="Extended License">
-                        <div class="d-flex justify-content-between align-items-center mb-2"><span>Extended License</span><span class="d-flex align-items-center">$490.00</span></div>
-                        <ul class="fs-13 text-gray-soft mb-2">
-                            <li>Use for a single product</li>
-                            <li>Paying users allowed</li>
-                        </ul>
-                        <p class="fs-11 text-gray-soft">Read the full <a href="https://themes.getbootstrap.com/licenses#fullExtendedLicense">Extended License</a></p>
-                    </button>
-                </div>
-            </div>
-            <form action="https://themes.getbootstrap.com/cart/" method="POST" class=" btn-block inline-block">
-                <input type="hidden" js-license-type="license_type" name="license_type" value="Standard License">
-                <input type="hidden" name="add-to-cart" value="33181">
-                <button type="submit" class="btn btn-brand btn-block btn-checkout"><span class="btn-text">Add to cart <span class="btn__label btn__label--right" js-price-value="main_price_div">$<b id="price_val">49.00</b></span></span></button>
-            </form>
-            <a class="text-gray ml-3" href="https://frlive.prium.me/">
-                <small>
-                    <i class="bootstrap-themes-icon-close"></i>
-                </small>
-            </a>
+    <div class="result">
+        <div class="shorturls">
+            {{$this->shorturls}}
         </div>
     </div>
-</nav>
-
-
-<script src="https://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/assets/javascript/Chart.min.js"></script>
-<script src="https://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/assets/javascript/Chart.bundle.min.js"></script>
-<script src="https://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/assets/javascript/tether.min.js"></script>
-<script src="https://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/assets/javascript/popper.min.js"></script>
-<script src="https://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/assets/javascript/bootstrap.min.js"></script>
-<script src="https://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/assets/javascript/lazysizes.min.js"></script>
-<script src="https://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/assets/javascript/scripts.js?ver=1638280002"></script>
-
-</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
+    <script type="application/javascript">
+        $.ajax({
+            url: "demo_test.txt", success: function (result) {
+                $("#result").html(result);
+            }
+        });
+    </script>
+</div>
+</body>
+</html>

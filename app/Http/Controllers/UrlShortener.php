@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\ShortUrl;
-use App\Models\UrlModel;
+use App\Models\RealUrl;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
@@ -14,39 +14,50 @@ use Illuminate\Auth\Events\Validated;
 
 class UrlShortener extends Controller
 {
+    public function __construct()
+    {
+//        $this->middleware('auth');
+    }
+
     public function index()
     {
-        return view();
+        return view('formgenerateurls');
+    }
+
+    public function shorturlredirect(Request $request)
+    {
+
+
     }
 
     public function generateshorturl(Request $request)
     {
 
-        $url = $request->url;
+        $shorturl = ShortUrl::generateshorturl();
+        $realurl = $request->get('realurl');
 
-        $url = new RealUrl();
-        $shorturl = new ShortUrl();
-        $url->realurl = "url";
-        $url->shorturl = Str::random(16);
-        $url->save();
+        $shorturlmodel = new ShortUrl();
+        $shorturlmodel->shorturl = $shorturl;
 
-        ShortUrl::all();
+        $realurlmodel = new RealUrl();
+        $shorturlmodel = new ShortUrl();
 
-        return view('shorturl');
+        $realurlmodel->realurl = $realurl;
+        $realurlmodel->save();
+
+        $shorturlmodel->shorturl = Str::random(16);
+        $shorturlmodel->save();
+
+        $realurls = RealUrl::all();
+        $shorturls = ShortUrl::all();
+
+        return view('shorturl', $shorturls);
 
     }
 
-    public function shorturlredirect(Request $request)
+    public function showurls()
     {
-        $shorturl = new ShortUrl();
-        $realurl = $request->get('shorturl');
-
-        ShortUrl::where
-        return redirect($realurl);
-    }
-
-    public function result()
-    {
-        return view("result");
+        $urls = ShortUrl::all();
+        return view("result", $urls);
     }
 }
