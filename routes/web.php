@@ -16,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/', [\App\Http\Controllers\MakeLinkController::class, 'index']);
+Route::get('/', [\App\Http\Controllers\MakeLinkController::class, 'show']);
+Route::post('/', [\App\Http\Controllers\MakeLinkController::class, 'shorturl']);
+Route::post('/', [\App\Http\Controllers\MakeLinkController::class, 'result']);
+Route::post('/', [\App\Http\Controllers\MakeLinkController::class, 'redirectto404']);
+
