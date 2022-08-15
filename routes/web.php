@@ -17,9 +17,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/', [\App\Http\Controllers\MakeLinkController::class, 'index']);
+Route::get('/index', [\App\Http\Controllers\MakeLinkController::class, 'index']);
 Route::get('/', [\App\Http\Controllers\MakeLinkController::class, 'show']);
-Route::post('/', [\App\Http\Controllers\MakeLinkController::class, 'shorturl']);
-Route::post('/', [\App\Http\Controllers\MakeLinkController::class, 'result']);
-Route::post('/', [\App\Http\Controllers\MakeLinkController::class, 'redirectto404']);
+Route::post('/shorturl', [\App\Http\Controllers\MakeLinkController::class, 'shorturl']);
+Route::post('/result', [\App\Http\Controllers\MakeLinkController::class, 'result']);
+Route::post('/redirectto404', [\App\Http\Controllers\MakeLinkController::class, 'redirectto404']);
 
